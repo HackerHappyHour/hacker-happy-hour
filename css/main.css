@@ -1,0 +1,21 @@
+/* 
+    Document   : main
+    Created on : Nov 5, 2013, 9:29:08 PM
+    Author     : chief
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.navbar-hacker {
+    background-color:#000;
+    font-family: monospace;
+    color:#4caa35;
+}
+
+.navbar-hacker a {
+    color:#4CAA35;
+}
+.navbar-hacker .nav .caret {
+    border-bottom-color: #4CAA35;
+    border-top-color: #4CAA35;
+}
