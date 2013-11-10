@@ -18,3 +18,4 @@
 * Challenges Archive Page
 * Challenge Page
 * Author Page
+* Search Results
