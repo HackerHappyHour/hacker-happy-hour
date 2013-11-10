@@ -4,56 +4,51 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
-    jshint: {
-      configs: [
-        "Gruntfile.js",
-        "package.json"
-      ],
-      src:{
-        files: {
-          src: ["src/**/*.js"]
-        },
+      jshint : {
         options: {
-          ignores: ['libs/**/*']
+          curly: true,
+          eqeqeq: true,
+          eqnull: true,
+          browser: true,
+          smarttabs:true,
+          globals: {
+            jQuery: true
+          },
+        files : {
+          src : ["src/js/**/*.js", "src/**/*.less"]
         }
-      },
-      test: ["test/**/*.js"]
-    },
-
-    less: {
+      }
+    }, 
+    less : {
       development: {
         options: {
-          paths: ['src/css'],
-          yuicompress: false
+          paths: ["src/css"]
         },
         files: {
-          'src/index.css':'src/index.less'
+          "src/css/main.css": "src/css/main.less"
+        }
+      },
+      production: {
+        options: {
+          paths: ["src/css"],
+          cleancss: true
+        },
+        files: {
+          "path/to/result.css": "path/to/source.less"
         }
       }
     },
-
-    watch: {
-      configs: {
-        files: "<%= jshint.configs %>",
-        tasks: ["jshint:configs"]
-      },
-      src: {
-        files: "<%= jshint.src %>",
-        tasks: ["jshint:src"]
-      },
-      test: {
-        files: "<%= jshint.src %>",
-        tasks: ["jshint:test"]
-      },
-      options: {
-          verbose: true
+    watch : {
+      scripts: {
+        files: ['src/**/*.js', 'src/**/*.less'],
+        tasks: ['jshint', 'less:development'],
+        options: {
+          spawn: false,
+        },
       }
-    }
     }
   });
   
-
-
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');

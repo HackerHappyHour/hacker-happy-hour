@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "description": "A theme for hackerhappyhour.com",
   "repository": {
-    "type":"git",
-    "url":"https://https://github.com/HakerHappyHour/hacker-happy-hour"
-    },
+    "type": "git",
+    "url": "https://https://github.com/HakerHappyHour/hacker-happy-hour"
+  },
   "keywords": [],
   "author": "",
   "license": "",
   "devDependencies": {
-    "grunt-contrib-less": "0.7.x",
-    "grunt-contrib-jshint": "0.6.x",
-    "grunt-contrib-watch": "0.5.x",
-    "grunt": "0.4.x"
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.7.1",
+    "grunt-contrib-less": "~0.8.1",
+    "grunt-contrib-watch": "~0.5.3"
   }
 }
