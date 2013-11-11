@@ -19,9 +19,19 @@ nav {
 }
 .brand-bar .links {
   float: right;
+  position: relative;
+  right: -80px;
 }
 .brand-bar .links li {
   display: inline;
+  margin: 0 8px;
+}
+.brand-bar .links li img {
+  vertical-align: top;
+  cursor: pointer;
+}
+.brand-bar .links li .glyphicon-user {
+  font-size: 32px;
 }
 .main-content {
   width: 1200px;
