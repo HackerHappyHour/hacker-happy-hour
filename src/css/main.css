@@ -4,9 +4,6 @@
   background: #efefef;
   width: 100%;
 }
-nav {
-  display: none;
-}
 .brand-bar {
   width: 1200px;
   margin: -38px auto 60px;
@@ -14,13 +11,8 @@ nav {
 .brand-bar h1 {
   margin: 0;
 }
-.brand-bar .search {
-  float: right;
-}
-.brand-bar .links {
-  float: right;
-  position: relative;
-  right: -80px;
+.brand-bar .links ul ul li {
+  display: block;
 }
 .brand-bar .links li {
   display: inline;
@@ -30,7 +22,7 @@ nav {
   vertical-align: top;
   cursor: pointer;
 }
-.brand-bar .links li .glyphicon-user {
+.brand-bar .links li .glyphicon {
   font-size: 32px;
 }
 .main-content {
