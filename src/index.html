@@ -10,9 +10,32 @@
         <script src="libs/dist/js/bootstrap.min.js"></script>
     </head>
     <body>
+        <div class="nav-bkgd"></div>
         <div class="brand-bar">
+            <div class="col-md-8">
             <h1>Hacker Happy Hour</h1>
+            </div>
+            <div class="search col-xs-2">
+                <form id="search-form">
+                    <div class="input-group">
+                        <label class="sr-only" for="search-box">Search</label>
+                        <input class="form-control input-sm" type="text" name="search-box" id="search-box" placeholder="search"/>
+                        <span class="input-group-btn">
+                            <button class="btn btn-sm btn-info" type="button">Go!</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <div class="links col-xs-2">
+                <ul>
+                    <li>Github</li>
+                    <li>Cloud</li>
+                    <li>User</li>
+                </ul>
+            </div>
         </div>
+
+
         <nav class="primary">
             <ul>
                 <li>Blog</li>
@@ -22,8 +45,22 @@
                 <li>Hackers</li>
             </ul>
         </nav>
-        <div class="wheel-wrapper"></div>
-        <div class="homepage-widget"></div>
-        <div class="content"></div>
+
+        <div class="main-content">
+            <div class="widget-area">
+                <div class="wheel-wrapper"></div>
+            </div>
+            <div class="widget-area">
+                <div class="wheel-content"></div>
+            </div>
+            <div class="widget-area">
+                <div class="google-map"></div>
+            </div>
+            <div class="widget-area">
+                <div class="page-content"></div>
+            </div>
+        </div>
+
+
     </body>
 </html>
