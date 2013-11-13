@@ -51,9 +51,9 @@ body {
 	height: 300px;
 	line-height: 300px;
 	text-align: center;
-	-webkit-box-shadow: 0 0 6px 0 black;
-	-moz-box-shadow: 0 0 6px 0 black;
-	box-shadow: 0 0 6px 0 black;
+	-webkit-box-shadow: 0 6px 5px -5px black;
+	-moz-box-shadow: 0 6px 5px -5px black;
+	box-shadow: 0 6px 5px -5px black;
 	border-radius: 5px;
 }
 
