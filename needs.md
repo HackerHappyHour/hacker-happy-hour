@@ -10,6 +10,8 @@
 
 ##Pages
 
+Each of the following pages needs to be a template to support the suggested site content
+
 * Blog Archives (author, categories, tags)
 * Single Blog Post Page
 * Hacker Overflow
