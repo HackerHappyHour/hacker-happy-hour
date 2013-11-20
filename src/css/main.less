@@ -1,7 +1,47 @@
-body {
-	color: #000;
-} 
+@import 'normalize.css';
 
-p {
-	margin: 0;
+@cmd-line-green:#4CAA35;
+@primary-bkgd:#fff;
+@secondary-bkgd:#efefef;
+.nav-bkgd{
+	height:45px;
+	background:@secondary-bkgd;
+	width:100%
+}
+
+.brand-bar {
+
+	width:1200px;
+	margin: -38px auto 60px;
+
+	h1 {
+		margin:0;
+
+	}
+	.links ul ul li {
+		display:block;
+	}
+	.links li {
+		display:inline;
+		margin:0 8px;
+
+		img {
+			vertical-align: top;
+			cursor: pointer;
+		}
+		.glyphicon {
+			font-size: 32px;
+		}
+	}
+}
+
+.main-content{
+	width:1200px;
+	margin:0 auto;
+	.widget-area {
+		width: 50%;
+		float:left;
+		height:250px;
+		border:1px solid #000;
+	}
 }

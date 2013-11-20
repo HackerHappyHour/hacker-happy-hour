@@ -1,0 +1,94 @@
+* {
+	font-family: Arial, Verdana, sans-serif;
+}
+
+body {
+	background-color: #efefef;
+}
+
+#skrollr-body {
+	width:100%;
+	height:100%;
+	position:fixed;
+}
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+.colspan3 {
+	width: 100%;
+}
+
+.colspan2 {
+	width: 66.13%;
+}
+
+.colspan1 {
+	width: 32.26%;
+}
+
+.tile {
+	background-color: #ffffff;
+	height: 300px;
+	line-height: 300px;
+	text-align: center;
+	-webkit-box-shadow: 0 6px 5px -5px black;
+	-moz-box-shadow: 0 6px 5px -5px black;
+	box-shadow: 0 6px 5px -5px black;
+	border-radius: 5px;
+}
+
+.beer {
+	background-image: url(../img/beer_fill.png);
+	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 940px) {
+}
+
+@media only screen and (max-width: 800px) {
+	.colspan3 {
+		width: 100%;
+	}
+	.colspan2 {
+		width: 100%; 
+	}
+	.colspan1 {
+		width: 100%; 
+	}
+}
+
+#header,
+#footer {
+	height: 150px;
+	line-height: 150px;
+}

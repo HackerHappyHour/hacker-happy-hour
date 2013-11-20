@@ -1,6 +1,37 @@
-body {
-  color: #000;
+@import 'normalize.css';
+.nav-bkgd {
+  height: 45px;
+  background: #efefef;
+  width: 100%;
 }
-p {
+.brand-bar {
+  width: 1200px;
+  margin: -38px auto 60px;
+}
+.brand-bar h1 {
   margin: 0;
+}
+.brand-bar .links ul ul li {
+  display: block;
+}
+.brand-bar .links li {
+  display: inline;
+  margin: 0 8px;
+}
+.brand-bar .links li img {
+  vertical-align: top;
+  cursor: pointer;
+}
+.brand-bar .links li .glyphicon {
+  font-size: 32px;
+}
+.main-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-content .widget-area {
+  width: 50%;
+  float: left;
+  height: 250px;
+  border: 1px solid #000;
 }
