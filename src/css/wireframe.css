@@ -6,6 +6,12 @@ body {
 	background-color: #efefef;
 }
 
+#skrollr-body {
+	width:100%;
+	height:100%;
+	position:fixed;
+}
+
 .section {
 	clear: both;
 	padding: 0px;
@@ -38,12 +44,16 @@ body {
 	}
 }
 
-.col2 {
+.colspan3 {
 	width: 100%;
 }
 
-.col1 {
-	width: 49.2%;
+.colspan2 {
+	width: 66.13%;
+}
+
+.colspan1 {
+	width: 32.26%;
 }
 
 .tile {
@@ -55,13 +65,21 @@ body {
 	-moz-box-shadow: 0 6px 5px -5px black;
 	box-shadow: 0 6px 5px -5px black;
 	border-radius: 5px;
+	background-image: url(../img/beer_fill.png);
+	background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 480px) {
-	.col2 {
+@media only screen and (max-width: 940px) {
+}
+
+@media only screen and (max-width: 800px) {
+	.colspan3 {
+		width: 100%;
+	}
+	.colspan2 {
 		width: 100%; 
 	}
-	.col1 {
+	.colspan1 {
 		width: 100%; 
 	}
 }

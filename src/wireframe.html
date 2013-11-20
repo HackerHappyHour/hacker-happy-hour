@@ -1,25 +1,26 @@
 <html>
 	<head>
-		<script type='text/css' src='wireframe.js'></script>
+		<script type='text/javascript' src='libs/skrollr.js'></script>
 		<link rel='stylesheet' type='text/css' href='css/wireframe.css' />
 	</head>
 	<body>
-		<div class='section group'>
-			<div class='col col2 tile' id='header'>Header</div>
+		<div id='skrollr-body'>
+			<div class='section group'>
+				<div class='col colspan3 tile' id='header'>Header</div>
+			</div>
+			<div class='section group'>
+				<div class='col colspan1 tile' id='projects' data-0='background-position:0px 300px; background-size: 100% 0px;' data-500='background-position:0px 0px; background-size: 100% 300px;'>Projects</div>
+				<div class='col colspan1 tile' id='blogs'>Blogs</div>
+				<div class='col colspan1 tile' id='authors'>Authors</div>
+			</div>
+			<div class='section group'>
+				<div class='col colspan1 tile' id='challenges'>Challenges</div>
+				<div class='col colspan1 tile' id='map'>Map</div>
+				<div class='col colspan1 tile' id='chat'>Chat</div>
+			</div>
 		</div>
-		<div class='section group'>
-			<div class='col col1 tile' id='projects'>Projects</div>
-			<div class='col col1 tile' id='blogs'>Blogs</div>
-		</div>
-		<div class='section group'>
-			<div class='col col1 tile' id='authors'>Authors</div>
-			<div class='col col1 tile' id='challenges'>Challenges</div>
-		</div>
-		<div class='section group'>
-			<div class='col col2 tile' id='map'>Map</div>
-		</div>
-		<div class='section group'>
-			<div class='col col2 tile' id='footer'>Footer</div>
-		</div>
+		<script type='text/javascript'>
+			var s = skrollr.init();
+		</script>
 	</body>
 </html>
